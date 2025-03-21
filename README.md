@@ -23,7 +23,7 @@ The notebook in `common_test` demonstrates a simple image classification task us
 
 ### Task 3.A:
 
-The notebook in `specific_test_3A` trains a deep learning-based super resolution algorithm, specifically, Fast Super-Resolution Convolutional Neural Network (FSRCNN) performed best to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Laplacian Pyramid Super-Resolution Network (LapSRN) was also used for training, but didn't performed well.
+The notebook in `specific_test_3A` trains a deep learning-based super resolution algorithm, specifically, Fast Super-Resolution Convolutional Neural Network (FSRCNN) to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Laplacian Pyramid Super-Resolution Network (LapSRN) was also used for training, but didn't performed well.
 
 #### Evaluation Results of Models on Validation Dataset:
 
