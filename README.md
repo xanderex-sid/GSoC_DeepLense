@@ -98,7 +98,7 @@ class CFG:
     model_name = "densenet169"
  ```
 
-- For **Specific Test**:
+- For **Specific Test III**:
 ```python
 class CFG:
     def __init__(self):
