@@ -59,8 +59,10 @@ Move to the directory to access the notebooks
 ```bash
 cd GSoC_DeepLense
 ```
-- For **Common Test**: `gsoc-commontask-deeplense.ipynb` notebook is used.
-- For **Specific Test 3.A**:   `gsoc-task-3a.ipynb` notebook is used.
+- For **Common Test**:
+    - `gsoc-commontask-deeplense.ipynb` notebook is used.
+- For **Specific Test 3.A**:
+    - `gsoc-task-3a.ipynb` notebook is used.
 - For **Specific Test 3.B**:
     - `gsoc-task-3b-SRGAN.ipynb` notebook is used for SRGAN model.
     - `gsoc-task-3b-fine-tuned-fsrcnn.ipynb` notebook is used for fine-tuning specific task 3.A.
