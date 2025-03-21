@@ -14,7 +14,7 @@
 
 - I used these models:
   * Super-Resolution Generative Adversarial Network (SRGAN) - file name - `gsoc-task-3b.ipynb`
-  * FSRCNN fine-tuned on task 3.A (Didn't performed well due to model limitations) - file name - `gsoc-task-3b-fine-tuned-fsrcnn.ipynb`
+  * FSRCNN (fine-tuned on task 3.A) - file name - `gsoc-task-3b-fine-tuned-fsrcnn.ipynb`
  
 ### Results
 
