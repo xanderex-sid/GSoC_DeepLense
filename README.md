@@ -59,9 +59,9 @@ Move to the directory to access the notebooks
 ```bash
 cd GSoC_DeepLense
 ```
-- For **Common Test** `gsoc-commontask-deeplense.ipynb` notebook is used
-- For **Specific Test 3.A**   `gsoc-task-3a.ipynb` notebook is used
-- For **Specific Test 3.B** `gsoc-task-3b.ipynb` notebook is used
+- For **Common Test**: `gsoc-commontask-deeplense.ipynb` notebook is used
+- For **Specific Test 3.A**:   `gsoc-task-3a.ipynb` notebook is used
+- For **Specific Test 3.B**: `gsoc-task-3b.ipynb` notebook is used
 
 #### 2) Dataset Directory
 
