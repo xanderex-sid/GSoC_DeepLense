@@ -16,7 +16,7 @@ The notebook in `common_test` demonstrates a simple image classification task us
 | :------------------------------------------ | :----- | :--------- | :------------ | :-------- |
 | DenseNet169                                | 15      | 128         | 0.0001        | 0.987      | 
 | DenseNet161                                 | 17     | 128         | 0.0001        | 0.986      |     
-| Ensamble                                    | -      | -          | -             | 0.988      | 
+| Ensemble                                    | -      | -          | -             | 0.988      | 
 
 
 ## Specific Test 3: Image Super-resolution
