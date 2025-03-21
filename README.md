@@ -45,7 +45,7 @@ I also used FSRCNN (from task 3.A) for fine-tuning, used perceptual loss and L1 
 | Model                                       | SSIM  | PSNR       | MSE     | L1 Loss  |
 | :------------------------------------------ | :---- | :----------| :----   | :------- |
 | SRGAN (Performed Better✅)                 | 0.6521 | 28.545 dB | 0.001557    | 0.034736 | 
-| FSRCNN (Fine-tuned-Test-3A)                  | 0.067 | 15.1378 dB  | 0.00457 | 0.057 | 
+| FSRCNN (Fine-tuned On Test 3.A)                  | 0.067 | 15.1378 dB  | 0.00457 | 0.057 | 
 
 ## Usage
 
