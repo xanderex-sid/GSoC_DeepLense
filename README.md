@@ -4,6 +4,8 @@
 This GitHub repository contains three Folders, each of which focuses on a different deep learning task.
 All the implementation is in PyTorch.
 
+For all the weights, please <a href="https://www.kaggle.com/models/xanderex/gsoc-deeplense-test-weights/">CLICK HERE</a>
+
 ## Common Test: Multi-class Classification
 
 The notebook in `common_test` demonstrates a simple image classification task using a convolutional neural network (Transfer Learning). The dataset used in this notebook is the one provided for common test, which is a collection of strong lensing image. The notebook includes all the necessary code to load the dataset, preprocess the images, define the CNN model, train the model, and evaluate its performance.
@@ -23,16 +25,16 @@ The notebook in `common_test` demonstrates a simple image classification task us
 
 The notebook in `specific_test_3A` trains a deep learning-based super resolution algorithm, specifically, Fast Super-Resolution Convolutional Neural Network (FSRCNN) performed best to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Laplacian Pyramid Super-Resolution Network (LapSRN) was also used for training, but didn't performed well.
 
-#### Evaluation Results on various Models:
+#### Evaluation Results of Models on Validation Dataset:
 
-| Model                                       | Epochs | Batch Size | Learning Rate | ROC_AUC   |
-| :------------------------------------------ | :----- | :--------- | :------------ | :-------- |
-| FSRCNN (Performed Better✅)                 | 5      | 64         | 0.0004        | 0.97      | 
-| LapSRN                                      |      | 64         | 0.0004        | 0.97      |  
+| Model                                       | SSIM  | PSNR       | MSE     | L1 Loss  |
+| :------------------------------------------ | :---- | :----------| :----   | :------- |
+| FSRCNN (Performed Better✅)                 | 0.9563 | 38.8625 dB | 2e-9    | 0.000035 | 
+| LapSRN                                      | 0.7568 | 33.2988 dB  | 0.000001 | 0.001 |  
 
 
 
-## Specific Task 5: Exploring Transformers
+### Task 3.B:
 
 The notebook `dl-transformer-train-vit-base.ipynb` in this folder demonstrates the use of a vision transformer method to build a robust and efficient model for binary classification on provided dataset.
 
