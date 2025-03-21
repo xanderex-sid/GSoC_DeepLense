@@ -13,7 +13,7 @@
 - For this task, I used techniques like data augmentation, fine-tuning using model of task 3.A, hyper parameters tuning, perceptual loss, Generative adversarial networks.
 
 - I used these models:
-  * Super-Resolution Generative Adversarial Network (SRGAN) - file name - `gsoc-task-3b.ipynb`
+  * Super-Resolution Generative Adversarial Network (SRGAN) - file name - `gsoc-task-3b-SRGAN.ipynb`
   * FSRCNN (fine-tuned on task 3.A) - file name - `gsoc-task-3b-fine-tuned-fsrcnn.ipynb`
  
 ### Results
