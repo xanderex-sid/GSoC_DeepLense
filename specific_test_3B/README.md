@@ -13,12 +13,12 @@
 - For this task, I used techniques like data augmentation, fine-tuning using model of task 3.A, hyper parameters tuning, perceptual loss, Generative adversarial networks.
 
 - I used these models:
-  * Super-Resolution Generative Adversarial Network (SRGAN) (Performed Better✅) - file - `gsoc-task-3b.ipynb`
+  * Super-Resolution Generative Adversarial Network (SRGAN) - file name - `gsoc-task-3b.ipynb`
   * FSRCNN fine-tuned on task 3.A (Didn't performed well due to model limitations)
  
 ### Results
 
-- For SRGAN (Performed Better✅)
+- For Super-Resolution Generative Adversarial Network (SRGAN)
 <img width="521" alt="Screenshot 2025-03-21 at 11 44 51 PM" src="https://github.com/user-attachments/assets/c4a2085b-c798-46d0-91c2-634d3a62474c" />
 <img width="878" alt="Screenshot 2025-03-21 at 11 45 33 PM" src="https://github.com/user-attachments/assets/0f8ef8f6-472d-4ce1-8630-51c9bcb49370" />
 
