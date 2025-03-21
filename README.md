@@ -36,9 +36,9 @@ The notebook in `specific_test_3A` trains a deep learning-based super resolution
 
 ### Task 3.B:
 
-The notebook `gsoc-task-3b.ipynb` in `specific_test_3B` trains a Super-Resolution Generative Adversarial Network (SRGAN) algorithm to enhance low-resolution strong lensing images using a limited dataset of real HR/LR pairs collected from HSC and HST telescopes. It uses transfer learning, data augmentation and min-max normalization.
+The notebook `gsoc-task-3b-SRGAN.ipynb` in `specific_test_3B` trains a Super-Resolution Generative Adversarial Network (SRGAN) algorithm to enhance low-resolution strong lensing images using a limited dataset of real HR/LR pairs collected from HSC and HST telescopes. It uses transfer learning, data augmentation and min-max normalization.
 
-I also used FSRCNN (from task 3.A) for fine-tuning and performed experiments like using perceptual loss and L1 loss together or using L1 loss only instead of MSE loss.
+I also used FSRCNN (from task 3.A) for fine-tuning in the notebook `gsoc-task-3b-fine-tuned-fsrcnn.ipynb` and performed experiments like using perceptual loss and L1 loss together or using L1 loss only instead of MSE loss.
 
 #### Results on various Models:
 
