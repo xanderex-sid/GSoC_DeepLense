@@ -1,5 +1,5 @@
 
-# ML4SCI GSoC DeepLense Task
+# ML4SCI 2025 GSoC DeepLense Task
 
 This GitHub repository contains three Folders, each of which focuses on a different deep learning task.
 All the implementation is in PyTorch.
