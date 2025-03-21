@@ -42,15 +42,10 @@ I also used FSRCNN (from task 3.A) for fine-tuning, used perceptual loss and L1 
 
 #### Results on various Models:
 
-| Model                                       | Epochs | Batch Size | Learning Rate | ROC_AUC   |
-| :------------------------------------------ | :----- | :--------- | :------------ | :-------- |
-| vit_base_patch16_224                        | 15     | 32         | 0.0003        | 0.99      | 
-| vit_large_patch16_224                       | 20     | 32         | 0.00004       | 0.99      |  
-| swin_base_patch4_window7_224                | 15     | 32         | 0.00005       | 0.99      |
-| Ensamble                                    | -      | -          | -             | 0.99      | 
-
-Another notebook `anomaly-detection.ipynb` demonstrates the training of the model to learn the distribution of the provided strong lensing images with no substructure.
-
+| Model                                       | SSIM  | PSNR       | MSE     | L1 Loss  |
+| :------------------------------------------ | :---- | :----------| :----   | :------- |
+| SRGAN (Performed Better✅)                 | 0.6521 | 28.545 dB | 0.001557    | 0.034736 | 
+| FSRCNN (Fine-tuned-Test-3A)                  | 0.067 | 15.1378 dB  | 0.00457 | 0.057 | 
 
 ## Usage
 
@@ -58,15 +53,15 @@ Another notebook `anomaly-detection.ipynb` demonstrates the training of the mode
 
 Clone the Repository
 ```bash
-$ git clone https://github.com/neerajanand321/GSOC_DeepLense.git
+$ git clone https://github.com/xanderex-sid/GSoC_DeepLense.git
 ```
 Move to the directory to access the notebooks
 ```bash
-cd GSOC_DeepLens
+cd GSoC_DeepLens
 ```
-- For **Common Task** `deep-lense.ipynb` notebook is used
-- For **Lens Finding**   `deep-lense-2.ipynb` notebook is used
-- For **Exploring Transformers** `dl-transformer-train-vit-base.ipynb` notebook is used
+- For **Common Test** `gsoc-commontask-deeplense.ipynb` notebook is used
+- For **Specific Test 3.A**   `gsoc-task-3a.ipynb` notebook is used
+- For **Specific Test 3.B** `gsoc-task-3b.ipynb` notebook is used
 
 #### 2) Dataset Directory
 
@@ -78,29 +73,49 @@ dir_sub = root_dir+'/sub/' # Path to folder having data containing substructure
 ```
 #### 3) Hyperparameters Setting
 Use `CFG` class to change the hyperparameters
+- For **Common Test**:
 ```python
 class CFG:
     lr = 0.0001
-    batch_size = 32
-    num_classes = 1
-    size=[224, 224]
+    batch_size = 128
+    num_classes = 3
     target_col="target"
-    epochs = 10
+    epochs = 15
     seed = 42
     num_workers = 2
     transform = False
-    weight_decay = 3e-5
+    weight_decay = 1e-2
     num_workers=2
     train=True
     debug=False
     metric_type="roc_auc"
-    scheduler_type = "CosineLRScheduler"
+    scheduler_type = "StepLR"
     optimizer_type = "Adam"
-    loss_type = "BCEWithLogitsLoss"
+    loss_type = "CrossEntropyLoss"
     max_grad_norm = 1000
-    lr_max = 3e-4
+    lr_max = 4e-4
     epochs_warmup = 1.0
-    model_name = "vit_base_patch16_224"
+    model_name = "densenet169"
+ ```
+
+- For **Specific Test**:
+```python
+class CFG:
+    def __init__(self):
+        self.lr_folder = "/kaggle/input/gsoc-dataset-task3-a/Dataset/LR"
+        self.hr_folder = "/kaggle/input/gsoc-dataset-task3-a/Dataset/HR"
+        self.batch_size = 16
+        self.val_batch_size = 16
+        self.num_workers = 4
+        self.train_size = 0.7
+        
+        self.model_d = 56
+        self.model_s = 12
+        self.model_m = 4
+        
+        self.lr_init = 0.001
+        self.epochs = 75
+        self.weights_fn = "best_fsrcnn_model.pth"
  ```
  #### 4) Augmentation
  For augmentation use `get_transform` function
