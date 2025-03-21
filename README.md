@@ -40,7 +40,7 @@ The notebook `gsoc-task-3b-SRGAN.ipynb` in `specific_test_3B` trains a Super-Res
 
 I also used FSRCNN (from task 3.A) for fine-tuning in the notebook `gsoc-task-3b-fine-tuned-fsrcnn.ipynb` and performed experiments like using perceptual loss and L1 loss together or using L1 loss only instead of MSE loss.
 
-#### Results of Models on Validation Dataset:
+#### Evaluation Results of Models on Validation Dataset:
 
 | Model                                       | SSIM  | PSNR       | MSE     | L1 Loss  |
 | :------------------------------------------ | :---- | :----------| :----   | :------- |
