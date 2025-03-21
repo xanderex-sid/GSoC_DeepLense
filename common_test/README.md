@@ -12,7 +12,7 @@
 - For this task, I used these models in PyTorch:
   * DenseNet-161
   * DenseNet-169
-  * Ensamble of these models 
+  * Ensemble of these models 
 
 ### Results
 
