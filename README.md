@@ -36,7 +36,9 @@ The notebook in `specific_test_3A` trains a deep learning-based super resolution
 
 ### Task 3.B:
 
-The notebook `dl-transformer-train-vit-base.ipynb` in this folder demonstrates the use of a vision transformer method to build a robust and efficient model for binary classification on provided dataset.
+The notebook `gsoc-task-3b.ipynb` in `specific_test_3B` trains a Super-Resolution Generative Adversarial Network (SRGAN) algorithm to enhance low-resolution strong lensing images using a limited dataset of real HR/LR pairs collected from HSC and HST telescopes. It uses transfer learning, data augmentation and min-max normalization.
+
+I also used FSRCNN (from task 3.A) for fine-tuning, used perceptual loss and L1 loss together. But it didn't performed well due to limited capabilities and because of being a small model.
 
 #### Results on various Models:
 
