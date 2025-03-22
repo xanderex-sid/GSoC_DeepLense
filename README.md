@@ -8,7 +8,7 @@ For all the weights, please <a href="https://www.kaggle.com/models/xanderex/gsoc
 
 ## Common Test: Multi-class Classification
 
-The notebook in `common_test` demonstrates a simple image classification task using a convolutional neural network (Transfer Learning). The dataset used in this notebook is the one provided for common test, which is a collection of strong lensing image. The notebook includes all the necessary code to load the dataset, preprocess the images, define the CNN model, train the model, and evaluate its performance.
+The <a href="https://github.com/xanderex-sid/GSoC_DeepLense/blob/main/common_test/gsoc-commontask-deeplense.ipynb">notebook</a> in `common_test` demonstrates a simple image classification task using a convolutional neural network (Transfer Learning). The dataset used in this notebook is the one provided for common test, which is a collection of strong lensing image. The notebook includes all the necessary code to load the dataset, preprocess the images, define the CNN model, train the model, and evaluate its performance.
 
 #### Results on various Models:
 
@@ -23,7 +23,7 @@ The notebook in `common_test` demonstrates a simple image classification task us
 
 ### Task 3.A:
 
-The notebook in `specific_test_3A` trains a deep learning-based super resolution algorithm, specifically, Fast Super-Resolution Convolutional Neural Network (FSRCNN) to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Laplacian Pyramid Super-Resolution Network (LapSRN) was also used for training, but didn't performed well.
+The <a href="https://github.com/xanderex-sid/GSoC_DeepLense/blob/main/specific_test_3A/gsoc-task-3a.ipynb">notebook</a> in `specific_test_3A` trains a deep learning-based super resolution algorithm, specifically, Fast Super-Resolution Convolutional Neural Network (FSRCNN) to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Laplacian Pyramid Super-Resolution Network (LapSRN) was also used for training, but didn't performed well.
 
 #### Evaluation Results of Models on Validation Dataset:
 
@@ -36,9 +36,9 @@ The notebook in `specific_test_3A` trains a deep learning-based super resolution
 
 ### Task 3.B:
 
-The notebook `gsoc-task-3b-SRGAN.ipynb` in `specific_test_3B` trains a Super-Resolution Generative Adversarial Network (SRGAN) algorithm to enhance low-resolution strong lensing images using a limited dataset of real HR/LR pairs collected from HSC and HST telescopes. It uses transfer learning, data augmentation and min-max normalization.
+The <a href="https://github.com/xanderex-sid/GSoC_DeepLense/blob/main/specific_test_3B/gsoc-task-3b-SRGAN.ipynb">notebook</a> `gsoc-task-3b-SRGAN.ipynb` in `specific_test_3B` trains a Super-Resolution Generative Adversarial Network (SRGAN) algorithm to enhance low-resolution strong lensing images using a limited dataset of real HR/LR pairs collected from HSC and HST telescopes. It uses transfer learning, data augmentation and min-max normalization.
 
-I also used FSRCNN (from task 3.A) for fine-tuning in the notebook `gsoc-task-3b-fine-tuned-fsrcnn.ipynb` and performed experiments like using perceptual loss and L1 loss together or using L1 loss only instead of MSE loss.
+I also used FSRCNN (from task 3.A) for fine-tuning in the <a href="https://github.com/xanderex-sid/GSoC_DeepLense/blob/main/specific_test_3B/gsoc-task-3b-fine-tuned-fsrcnn.ipynb">notebook</a> `gsoc-task-3b-fine-tuned-fsrcnn.ipynb` and performed experiments like using perceptual loss and L1 loss together or using L1 loss only instead of MSE loss.
 
 #### Evaluation Results of Models on Validation Dataset:
 
